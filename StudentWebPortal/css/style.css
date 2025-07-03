@@ -1,0 +1,336 @@
+/* body CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* Navbar CSS */
+nav {
+    border-bottom: 2px solid #eaeaea;
+}
+.nav-link {
+    font-weight: 500;
+    color: #006633 !important;
+}
+.nav-link:hover {
+    color: #FFCC33 !important;
+}
+
+/* header box with shadow */
+.title {
+    border: none;
+    padding: 20px;
+    background-color: #006633;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* shadow */
+    position: relative;
+    overflow: hidden;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 400px;
+    height: 5px;
+    background-color: #FFCC33;
+    transform: translateX(-50%);
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h1:hover {
+    color: #FFCC33; 
+}
+
+/* Profile Image */
+.profile-image {
+    display: inline-block;
+    border: 8px solid #FFCC33;
+    border-radius: 60%;
+    padding: 5px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-color: white;
+}
+.profile-image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #FFCC33;
+    border-radius: 60%;
+    transform: translate(-50%, -50%);
+}
+.image {
+    border-radius: 60%;
+    width: 250px;
+}
+
+/* Paragraph Style */
+.text-style {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact {
+    font-size: 16px;
+    color: #006633;
+    margin-bottom: 20px;
+}
+.contact a {
+    color: #FFCC33;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button Stlye */
+.gmubtn {
+    background-color: #006633;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.gmubtn:hover {
+    background-color: #FFCC33;
+    color: #006633;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Survey Form Styling */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Form Label */
+.form-group label {
+    font-weight: 500;
+    color: #006633;
+}
+
+/* Input Fields */
+.form-control {
+    border: 2px solid #006633; 
+    border-radius: 0.5rem; 
+    padding: 0.75rem 1.25rem; 
+    background-color: #fff;
+    margin-bottom: 15px;
+    font-size: 1rem; 
+}
+.form-control:focus {
+    border-color: #FFCC33; 
+    box-shadow: 0 0 0 0.2rem rgba(255, 204, 51, 0.25); 
+}
+
+/* Shortened Fields */
+.short-field {
+    max-width: 100%; 
+}
+
+/* Date, Telephone, Email, URL, Grad Year, Likelihood */
+#date, #telephone, #email, #url, #grad_year, #likelihood {
+    max-width: 250px;
+}
+
+/* Graduation Month Dropdown */
+#grad_month {
+    max-width: 250px;
+    height: 40px; 
+    line-height: 40px; 
+    padding: 5px; 
+}
+
+/* Likelihood Dropdown */
+#likelihood {
+    max-width: 250px;
+    height: 40px; 
+    line-height: 40px; 
+    padding: 5px; 
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: #FFCC33;
+    color: #006633;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-submit:hover {
+    background-color: #e6b800;
+    color: #004d00;
+}
+
+/* Button Style */
+.btn-custom {
+    background-color: #006633; 
+    border-color: #006633; 
+    color: white; 
+}
+
+/* Change to yellow on hover */
+.btn-custom:hover {
+    background-color: #FFCC33; 
+    border-color: #FFCC33; 
+    color: black; 
+}
+
+/* Checkbox and Radio Button Styles */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #006633; 
+    border-color: #006633; 
+}
+.custom-checkbox .custom-control-label::before {
+    border: 2px solid #006633; 
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #006633; 
+    border-color: #006633; 
+}
+.custom-radio .custom-control-label::before {
+    border: 2px solid #006633; 
+}
+.custom-checkbox .custom-control-label::after {
+    background-color: #006633; 
+}
+.custom-radio .custom-control-label::after {
+    background-color: #006633; 
+}
+.form-check-label {
+    font-size: 1.1rem;
+    color: #006633;
+}
+.form-check-input {
+    margin-right: 10px;
+}
+.form-check {
+    margin-bottom: 15px;
+}
+
+/* CSS for  input fields */
+.form-group label {
+    font-weight: bold;
+    color: #006633; 
+}
+.form-row {
+    margin-bottom: 1.5rem; 
+}
+.form-group.col-md-6 {
+    padding-right: 15px; 
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form-control {
+        padding: 0.75rem;
+    }
+
+    .short-field {
+        max-width: 100%;
+    }
+}
+
+/* Table Style */
+.table {
+    border: 2px solid #006633; 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+.table thead {
+    background-color: #006633; 
+    color: #FFCC33; 
+}
+.table tbody tr:hover {
+    background-color: lightyellow; 
+}
+.table th, .table td {
+    padding: 12px; 
+    text-align: left;
+}
+.table th {
+    font-weight: bold; 
+}
+ul {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+/* For fields that need to be filled (required) */
+.required:after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+.form-group label span {
+    color: red;
+    font-weight: bold;
+}
+
+/* Certificates Style */
+.cer-section {
+    margin-top: 3rem;
+}
+.cer-section h2 {
+    color: #006633;
+    font-weight: bold;
+}
+.cer-section ul {
+    padding-left: 0;
+}
+.cer-section li {
+    margin-bottom: 1.2rem;
+    list-style: none;
+}
+.cer-section a {
+    font-size: 16px;
+    color: #006633; 
+    text-decoration: none;
+    padding-left: 1rem;
+    position: relative;
+    transition: color 0.4s ease, padding-left 0.4s ease;
+}
+.cer-section a::before {
+    content: "●";
+    color: #FFCC33; 
+    position: absolute;
+    left: 0;
+}
+.cer-section a:hover {
+    color: #FFCC33; 
+    padding-left: 1.5rem; 
+}
+.cer-section a:hover::before {
+    color: #006633; 
+}
+
+
